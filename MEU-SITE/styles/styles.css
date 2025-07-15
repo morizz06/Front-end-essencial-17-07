@@ -1,0 +1,16 @@
+html{
+    font-family:roboto, sans-serif;
+}
+
+html {
+    font-family: Roboto, sans-serif;
+}
+
+p,li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+h1{
+    color: rgba(1, 170, 221, 0.692);
+    text-align: center;
+}

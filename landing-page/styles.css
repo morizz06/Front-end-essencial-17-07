@@ -1,0 +1,106 @@
+/* ============================
+   RESET GLOBAL
+   ============================ */
+   * {
+    margin: 0;                      /* Remove margens padrão */
+    padding: 0;                     /* Remove espaçamentos internos padrão */
+    box-sizing: border-box;        /* Inclui padding e borda no cálculo do tamanho total do elemento */
+  }
+  
+  /* ============================
+     ESTILOS GERAIS DO BODY
+     ============================ */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* Fonte padrão do site */
+    background-color: #f9fafb;     /* Cor de fundo clara */
+    color: #111827;                /* Cor do texto (quase preto) */
+  }
+  
+  /* ============================
+     NAVBAR (barra de navegação)
+     ============================ */
+  .navbar {
+    background-color: #4f46e5;     /* Cor de fundo roxa */
+    padding: 1rem 2rem;            /* Espaçamento interno (1 acima/abaixo, 2 laterais) */
+    display: flex;                 /* Layout flexível em linha */
+    justify-content: space-evenly;/* Espaço igual entre os elementos */
+    align-items: center;          /* Alinha verticalmente os itens */
+  }
+  
+  /* ============================
+     LISTA DE LINKS DO MENU
+     ============================ */
+  .nav-links {
+    list-style: none;             /* Remove os marcadores da lista */
+    display: flex;                /* Organiza os <li> em linha */
+    gap: 1.5rem;                  /* Espaço entre os links */
+  }
+  
+  /* LINKS DENTRO DO MENU */
+  .nav-links a {
+    color: #fff;                  /* Texto branco */
+    text-decoration: none;       /* Remove sublinhado */
+    font-weight: 500;            /* Peso da fonte intermediário */
+    transition: color 0.3s;      /* Transição suave ao mudar a cor no hover */
+  }
+  
+  /* EFEITO HOVER NOS LINKS DO MENU */
+  .nav-links a:hover {
+    color: #e0e7ff;               /* Cor azul clara quando o mouse passa */
+  }
+  
+  /* ============================
+     LOGO
+     ============================ */
+  .logo {
+    color: #fff;                  /* Cor branca */
+    font-size: 1.5rem;            /* Tamanho grande para destaque */
+    font-weight: bold;           /* Fonte em negrito */
+  }
+  
+  /* ============================
+     SEÇÃO HERO (principal)
+     ============================ */
+  .hero {
+    display: flex;               /* Layout em linha */
+    flex-wrap: wrap;            /* Permite quebrar para linha de baixo em telas pequenas */
+    align-items: center;        /* Centraliza os itens verticalmente */
+    justify-content: space-between; /* Espaça os itens horizontalmente */
+    padding: 4rem 2rem;         /* Espaçamento grande nas laterais e verticalmente */
+  }
+  
+  /* BLOCO DE TEXTO DA HERO */
+  .hero-texto {
+    max-width: 500px;           /* Limita a largura do texto */
+  }
+  
+  /* TÍTULO DENTRO DA HERO */
+  .hero-texto h1 {
+    font-size: 2.5rem;          /* Tamanho grande para destaque */
+    color: #111827;             /* Cor escura para contraste */
+    margin-bottom: 1rem;        /* Espaço abaixo do título */
+  }
+  
+  /* PARÁGRAFO DA HERO */
+  .hero-texto p {
+    font-size: 1rem;            /* Tamanho padrão */
+    color: #6b7280;             /* Cinza suave */
+    margin-bottom: 2rem;        /* Espaço abaixo do texto */
+  }
+  
+  /* BOTÃO DE CHAMADA PARA AÇÃO (CTA) */
+  .btn-cta {
+    background-color: #4f46e5;  /* Fundo roxo */
+    color: #fff;                /* Texto branco */
+    padding: 0.75rem 1.5rem;    /* Espaçamento interno do botão */
+    border-radius: 0.5rem;      /* Cantos arredondados */
+    text-decoration: none;      /* Remove sublinhado */
+    font-weight: 600;           /* Negrito leve */
+    transition: background-color 0.3s; /* Animação de fundo ao passar o mouse */
+  }
+  
+  /* EFEITO HOVER NO BOTÃO CTA */
+  .btn-cta:hover {
+    background-color: #e0e7ff;  /* Muda o fundo para azul claro ao passar o mouse */
+  }
+  

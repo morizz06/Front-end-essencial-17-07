@@ -1,3 +1,7 @@
+/* =======================
+   VARIÁVEIS DE CORES GLOBAIS
+   ======================= */
+/* O seletor :root permite definir variáveis CSS que serão usadas em todo o documento */
 :root {
   --vermelho: #F25C54;
   --amarelo: #FFE066;
@@ -6,95 +10,130 @@
   --branco: #FFFFFF;
 }
 
+/* =======================
+   ESTILO GERAL DO HTML
+   ======================= */
 html {
   font-family: 'Roboto', sans-serif;
+  /* Define a fonte principal da página */
 }
 
+/* =======================
+   ESTILO DO BODY
+   ======================= */
 body {
-  max-width: 600px;
-  width: 90%;
-  margin: 40px auto;
-  padding: 1%;
-  background-color: var(--vermelho);
-  color: var(--marrom);
-  border-radius: 30px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-  text-align: center;
+  max-width: 600px;               /* Largura máxima para melhor leitura em telas grandes */
+  width: 90%;                     /* Largura relativa para responsividade */
+  margin: 40px auto;              /* Centraliza o conteúdo verticalmente e horizontalmente */
+  padding: 1%;                    /* Espaçamento interno */
+  background-color: var(--vermelho);  /* Fundo vermelho definido pela variável */
+  color: var(--marrom);               /* Cor do texto principal */
+  border-radius: 30px;                /* Bordas arredondadas */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);  /* Sombra ao redor do body */
+  text-align: center;                 /* Centraliza o texto por padrão */
 }
 
+/* =======================
+   IMAGENS GERAIS
+   ======================= */
 img {
-  width: 250px;
-  margin-bottom: 20px;
+  width: 250px;                  /* Largura padrão para imagens fora do cardápio */
+  margin-bottom: 20px;          /* Espaço abaixo da imagem */
 }
 
+/* =======================
+   TÍTULO PRINCIPAL (h1)
+   ======================= */
 h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: var(--branco);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  font-size: 2rem;                    /* Tamanho da fonte grande */
+  margin-bottom: 10px;               /* Espaço inferior */
+  color: var(--branco);              /* Cor branca */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);  /* Sombra no texto para destacar */
 }
 
+/* =======================
+   SUBTÍTULOS (h2)
+   ======================= */
 h2 {
-  border-bottom: 3px solid var(--amarelo);
-  padding-bottom: 8px; 
-  margin-bottom: 0px; 
-  color: var(--amarelo);
-  text-align: left;
+  border-bottom: 3px solid var(--amarelo);  /* Linha amarela abaixo do título */
+  padding-bottom: 8px;
+  margin-bottom: 0px;
+  color: var(--amarelo);             /* Cor do texto */
+  text-align: left;                 /* Alinha à esquerda */
 }
 
-
+/* =======================
+   PARÁGRAFOS (p)
+   ======================= */
 p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  text-align: justify;
-  background-color: var(--bege);
-  padding: 15px;
-  border-radius: 10px;
+  font-size: 1.1rem;              /* Tamanho do texto */
+  line-height: 1.6;              /* Espaçamento entre linhas */
+  text-align: justify;           /* Justifica o texto */
+  background-color: var(--bege); /* Fundo claro */
+  padding: 15px;                 /* Espaço interno */
+  border-radius: 10px;           /* Cantos arredondados */
 }
 
-
+/* =======================
+   SEÇÃO DO CARDÁPIO
+   ======================= */
 .cardapio {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  display: flex;                 /* Layout flexível */
+  flex-direction: column;       /* Itens em coluna */
+  gap: 30px;                     /* Espaço entre os itens */
   padding: 20px;
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 900px;              /* Largura máxima */
+  margin: 0 auto;                /* Centraliza na horizontal */
 }
 
+/* =======================
+   ITENS DO CARDÁPIO
+   ======================= */
 .item {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  background-color: #fff4f4;
+  display: flex;                 /* Layout em linha para imagem e texto */
+  align-items: center;          /* Alinha verticalmente os itens */
+  gap: 20px;                     /* Espaço entre imagem e texto */
+  background-color: #fff4f4;    /* Fundo suave */
   padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;          /* Cantos arredondados */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra leve */
 }
 
+/* IMAGEM DENTRO DO ITEM DO CARDÁPIO */
 .item img {
-  width: 200px;
-  height: auto;
-  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;            /* Garante que a imagem ocupe todo o espaço sem distorcer */
+  border-radius: 8px;
+  transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
 }
 
+/* EFEITO HOVER NAS IMAGENS */
+.item img:hover {
+  transform: scale(1.05);       /* Aumenta ligeiramente a imagem ao passar o mouse */
+}
+
+/* CONTEÚDO DE TEXTO DENTRO DO ITEM */
 .item .info {
-  flex: 1;
+  flex: 1;                       /* Ocupa o restante do espaço disponível */
 }
 
+/* TÍTULO DO LANCHE */
 .item h3 {
   margin: 0;
   font-size: 1.5rem;
-  color: #c62828;
+  color: #c62828;               /* Vermelho escuro */
 }
 
+/* DESCRIÇÃO DO LANCHE */
 .item p {
   margin: 8px 0;
   font-size: 1rem;
 }
 
+/* PREÇO DO LANCHE */
 .item .preco {
   font-weight: bold;
   font-size: 1.2rem;
-  color: #2e7d32;
+  color: #2e7d32;              /* Verde escuro */
 }

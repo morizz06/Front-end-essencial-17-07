@@ -1,34 +1,72 @@
 <!DOCTYPE html>
+<!-- Define que o documento usa HTML5 -->
+
 <html lang="pt-BR">
+<!-- Início do HTML. O atributo lang define o idioma da página como português do Brasil -->
+
 <head>
+  <!-- Cabeçalho da página: inclui metadados, fontes e estilos (não aparece no corpo da página) -->
+
   <meta charset="UTF-8">
+  <!-- Define o conjunto de caracteres como UTF-8 (permite acentos e caracteres especiais) -->
+
   <title>Hamburgão do 22</title>
+  <!-- Define o título que será exibido na aba do navegador -->
+
+  <!-- Pré-conexão com servidores do Google Fonts para otimizar carregamento da fonte -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Importa a fonte Roboto com pesos 400 (normal) e 700 (negrito) -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Importa o arquivo de estilos CSS externo (separação de estilo e conteúdo) -->
   <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
+  <!-- Corpo da página: conteúdo visível ao usuário -->
+
+  <!-- Exibe a logo da lanchonete. O atributo alt descreve a imagem para acessibilidade -->
   <img src="images/hamburgao_22_no_bg.png" alt="Logo Hamburgão do 22">
 
+  <!-- Título principal da página -->
   <h1>O 22° Melhor da Região</h1>
 
+  <!-- Parágrafo de introdução com texto de boas-vindas -->
   <p>
-    Se liga no Hamburgão do 22 – a nova lanchonete que chegou pesado no sabor, no preço e na vibe! Aqui o hambúrguer é de verdade: carne suculenta, pão macio, molhos caseiros e aquele toque especial que só o 22 tem.
+    Se liga no Hamburgão do 22 – a nova lanchonete que chegou pesado no sabor, no preço e na vibe!
+    Aqui o hambúrguer é de verdade: carne suculenta, pão macio, molhos caseiros e aquele toque especial que só o 22 tem.
   </p>
 
+  <!-- Subtítulo da seção de cardápio -->
   <h2>Cardápio</h2>
+
+  <!-- Linha horizontal para dividir visualmente a seção (estilizada via CSS com a classe) -->
   <hr class="linha-cardapio">
 
+  <!-- SECTION agrupa um bloco temático (neste caso, os itens do cardápio) -->
   <section class="cardapio">
+    <!-- A class "cardapio" permite aplicar estilos específicos a essa seção no CSS -->
+
+    <!-- Cada DIV representa um item do cardápio -->
+    <!-- A tag <div> é um contêiner genérico usado para agrupar elementos -->
+    <!-- A class "item" serve para aplicar estilos iguais a todos os lanches -->
     <div class="item">
+      <!-- Imagem do lanche -->
       <img src="images/lanche1.jpg" alt="lanche1">
+
+      <!-- Informações do lanche agrupadas (nome, descrição e preço) -->
       <div class="info">
+        <!-- Class "info" usada para aplicar estilo ao conteúdo textual do lanche -->
         <h3>Hamburgão Clássico</h3>
         <p>Pão, carne 150g, queijo prato, alface, tomate e maionese especial da casa.</p>
         <span class="preco">R$ 18,90</span>
+        <!-- A class "preco" permite destacar o valor com cor, tamanho etc. -->
       </div>
     </div>
+
+    <!-- Repetição do padrão para os demais lanches -->
 
     <div class="item">
       <img src="images/lanche2.jpg" alt="lanche2">
@@ -65,6 +103,11 @@
         <span class="preco">R$ 21,50</span>
       </div>
     </div>
+
   </section>
+  <!-- Fim da seção de cardápio -->
+
 </body>
+
 </html>
+<!-- Fim do documento HTML -->

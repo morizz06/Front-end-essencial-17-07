@@ -2,8 +2,8 @@
    RESET GLOBAL
    ============================ */
    * {
-    margin: 0;                      /* Remove margens padrão */
-    padding: 0;                     /* Remove espaçamentos internos padrão */
+    margin: 0;                      /* Remove margens padrão de todos os elementos */
+    padding: 0;                     /* Remove preenchimentos internos padrão */
     box-sizing: border-box;        /* Inclui padding e borda no cálculo do tamanho total do elemento */
   }
   
@@ -11,96 +11,148 @@
      ESTILOS GERAIS DO BODY
      ============================ */
   body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* Fonte padrão do site */
-    background-color: #f9fafb;     /* Cor de fundo clara */
-    color: #111827;                /* Cor do texto (quase preto) */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* Define a fonte principal do site */
+    background-color: #f9fafb;     /* Define uma cor de fundo clara */
+    color: #111827;                /* Define a cor principal do texto (quase preta) */
   }
   
   /* ============================
      NAVBAR (barra de navegação)
      ============================ */
   .navbar {
-    background-color: #4f46e5;     /* Cor de fundo roxa */
-    padding: 1rem 2rem;            /* Espaçamento interno (1 acima/abaixo, 2 laterais) */
-    display: flex;                 /* Layout flexível em linha */
-    justify-content: space-evenly;/* Espaço igual entre os elementos */
-    align-items: center;          /* Alinha verticalmente os itens */
+    background-color: #4f46e5;     /* Cor de fundo roxa da navbar */
+    padding: 1rem 2rem;            /* Espaçamento interno: 1rem em cima/baixo, 2rem nas laterais */
+    display: flex;                 /* Usa flexbox para alinhar os itens */
+    justify-content: space-evenly;/* Distribui os itens com espaçamento igual entre eles */
+    align-items: center;          /* Alinha os itens verticalmente no centro */
   }
   
   /* ============================
      LISTA DE LINKS DO MENU
      ============================ */
   .nav-links {
-    list-style: none;             /* Remove os marcadores da lista */
-    display: flex;                /* Organiza os <li> em linha */
-    gap: 1.5rem;                  /* Espaço entre os links */
+    list-style: none;             /* Remove os marcadores (bolinhas) da lista */
+    display: flex;                /* Exibe os itens da lista em linha */
+    gap: 1.5rem;                  /* Espaçamento entre cada item da lista */
   }
   
   /* LINKS DENTRO DO MENU */
   .nav-links a {
-    color: #fff;                  /* Texto branco */
-    text-decoration: none;       /* Remove sublinhado */
-    font-weight: 500;            /* Peso da fonte intermediário */
-    transition: color 0.3s;      /* Transição suave ao mudar a cor no hover */
+    color: #fff;                  /* Cor do texto dos links: branca */
+    text-decoration: none;       /* Remove o sublinhado dos links */
+    font-weight: 500;            /* Define peso médio da fonte */
+    transition: color 0.3s;      /* Suaviza a transição de cor ao passar o mouse */
   }
   
   /* EFEITO HOVER NOS LINKS DO MENU */
   .nav-links a:hover {
-    color: #e0e7ff;               /* Cor azul clara quando o mouse passa */
+    color: #e0e7ff;               /* Muda a cor do link para azul claro ao passar o mouse */
   }
   
   /* ============================
      LOGO
      ============================ */
   .logo {
-    color: #fff;                  /* Cor branca */
-    font-size: 1.5rem;            /* Tamanho grande para destaque */
-    font-weight: bold;           /* Fonte em negrito */
+    color: #fff;                  /* Cor branca para o texto da logo */
+    font-size: 1.5rem;            /* Tamanho grande da fonte */
+    font-weight: bold;           /* Negrito para destaque */
   }
   
   /* ============================
      SEÇÃO HERO (principal)
      ============================ */
   .hero {
-    display: flex;               /* Layout em linha */
-    flex-wrap: wrap;            /* Permite quebrar para linha de baixo em telas pequenas */
-    align-items: center;        /* Centraliza os itens verticalmente */
-    justify-content: space-between; /* Espaça os itens horizontalmente */
-    padding: 4rem 2rem;         /* Espaçamento grande nas laterais e verticalmente */
+    display: flex;               /* Layout em linha com flexbox */
+    flex-wrap: wrap;            /* Permite que os itens quebrem linha em telas pequenas */
+    align-items: center;        /* Alinha os itens verticalmente */
+    justify-content: space-between; /* Espaça os elementos horizontalmente */
+    padding: 4rem 2rem;         /* Espaçamento interno amplo */
   }
   
   /* BLOCO DE TEXTO DA HERO */
   .hero-texto {
-    max-width: 500px;           /* Limita a largura do texto */
+    max-width: 500px;           /* Define uma largura máxima para o conteúdo de texto */
   }
   
   /* TÍTULO DENTRO DA HERO */
   .hero-texto h1 {
-    font-size: 2.5rem;          /* Tamanho grande para destaque */
+    font-size: 2.5rem;          /* Tamanho grande para o título principal */
     color: #111827;             /* Cor escura para contraste */
-    margin-bottom: 1rem;        /* Espaço abaixo do título */
+    margin-bottom: 1rem;        /* Espaçamento abaixo do título */
   }
   
   /* PARÁGRAFO DA HERO */
   .hero-texto p {
-    font-size: 1rem;            /* Tamanho padrão */
-    color: #6b7280;             /* Cinza suave */
-    margin-bottom: 2rem;        /* Espaço abaixo do texto */
+    font-size: 1rem;            /* Tamanho de fonte padrão */
+    color: #6b7280;             /* Cor cinza suave para o parágrafo */
+    margin-bottom: 2rem;        /* Espaço inferior maior para separar do botão */
   }
   
   /* BOTÃO DE CHAMADA PARA AÇÃO (CTA) */
   .btn-cta {
-    background-color: #4f46e5;  /* Fundo roxo */
+    background-color: #4f46e5;  /* Cor de fundo do botão: roxa */
     color: #fff;                /* Texto branco */
-    padding: 0.75rem 1.5rem;    /* Espaçamento interno do botão */
+    padding: 0.75rem 1.5rem;    /* Espaçamento interno (top/bottom, left/right) */
     border-radius: 0.5rem;      /* Cantos arredondados */
     text-decoration: none;      /* Remove sublinhado */
-    font-weight: 600;           /* Negrito leve */
-    transition: background-color 0.3s; /* Animação de fundo ao passar o mouse */
+    font-weight: 600;           /* Fonte em negrito leve */
+    transition: background-color 0.3s; /* Suaviza a transição de cor ao passar o mouse */
   }
   
   /* EFEITO HOVER NO BOTÃO CTA */
   .btn-cta:hover {
-    background-color: #e0e7ff;  /* Muda o fundo para azul claro ao passar o mouse */
+    background-color: #e0e7ff;  /* Cor mais clara ao passar o mouse */
+  }
+  
+  /* ============================
+     SEÇÃO DE CONTEÚDO
+     ============================ */
+  .conteúdo {
+    padding: 4rem 2rem;         /* Espaçamento interno vertical e horizontal */
+    background-color: #fff;     /* Fundo branco */
+    text-align: center;         /* Centraliza o texto */
+  }
+  
+  /* TÍTULO DA SEÇÃO DE CONTEÚDO */
+  .conteúdo h2 {
+    font-size: 2rem;            /* Tamanho do título */
+    color: #111827;             /* Cor escura para destaque */
+    margin-bottom: 2rem;        /* Espaçamento inferior */
+  }
+  
+  /* ============================
+     CARDS DE CONTEÚDO
+     ============================ */
+  .cards {
+    display: flex;              /* Exibe os cards em linha */
+    flex-wrap: wrap;            /* Permite quebrar para múltiplas linhas */
+    justify-content: center;    /* Centraliza os cards */
+    gap: 2rem;                  /* Espaço entre os cards */
+  }
+  
+  /* ESTILO INDIVIDUAL DE CADA CARD */
+  .card {
+    background-color: #f3f4f6;  /* Fundo cinza claro */
+    border-radius: 1rem;        /* Bordas arredondadas */
+    padding: 2rem;              /* Espaçamento interno */
+    max-width: 300px;           /* Largura máxima do card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor do card */
+    transition: transform 0.2s; /* Animação suave ao interagir */
+  }
+  
+  /* TÍTULO DO CARD */
+  .card h3 {
+    color: #4f46e5;             /* Cor roxa para destacar */
+    margin-bottom: 0.5rem;      /* Espaçamento inferior */
+  }
+  
+  /* PARÁGRAFO DO CARD */
+  .card p {
+    color: #6b7280;             /* Cor cinza suave */
+  }
+  
+  /* EFEITO HOVER DO CARD */
+  .card:hover {
+    transform: translateY(-5px); /* Eleva o card levemente ao passar o mouse */
   }
   

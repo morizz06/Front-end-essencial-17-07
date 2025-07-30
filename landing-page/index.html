@@ -1,84 +1,81 @@
-<!DOCTYPE html>
-<!-- Declara que este é um documento HTML5 -->
+<!DOCTYPE html> <!-- Declara que este documento está usando HTML5 -->
 
-<html lang="en">
-<!-- Define o idioma da página como inglês (você pode usar "pt-BR" se quiser português) -->
-
+<html lang="en"> <!-- Início do documento HTML, idioma definido como inglês -->
 <head>
-    <meta charset="UTF-8">
-    <!-- Define o conjunto de caracteres como UTF-8 (permite acentos e símbolos especiais) -->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Torna a página responsiva em dispositivos móveis -->
-
-    <link rel="stylesheet" href="styles.css">
-    <!-- Importa a folha de estilos externa chamada "styles.css" -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 (suporta caracteres especiais como acentos) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Garante que a página será responsiva em dispositivos móveis -->
+    <link rel="stylesheet" href="styles.css"> <!-- Importa o arquivo externo de estilos CSS -->
 </head>
 
-<body>
-    <!-- Início do corpo da página (conteúdo visível pelo usuário) -->
+<body> <!-- Início do corpo do documento, onde o conteúdo visível será inserido -->
 
+    <!-- ===========================
+         CABEÇALHO DA PÁGINA
+         =========================== -->
     <header>
-        <!-- Cabeçalho da página: geralmente contém navegação e logo -->
-
+        <!-- Barra de navegação principal -->
         <nav class="navbar">
-            <!-- Menu de navegação com classe "navbar" para aplicar estilos via CSS -->
-
-            <div class="logo">Frontend Demo</div>
-            <!-- Bloco da logo/título do site -->
-
+            <div class="logo">Frontend Demo</div> <!-- Logo ou nome do site -->
+            
+            <!-- Lista de links do menu de navegação -->
             <ul class="nav-links">
-                <!-- Lista de navegação. A <ul> é uma lista não ordenada -->
-                <!-- Cada <li> é um item da lista; cada item contém um link <a> -->
-
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Conteúdo</a></li>
-                <li><a href="#">Depoimentos</a></li>
-                <li><a href="#">Exemplos</a></li>
-                <li><a href="#">Tutorial</a></li>
+                <li><a href="#">Início</a></li> <!-- Link para a seção "Início" -->
+                <li><a href="#">Conteúdo</a></li> <!-- Link para a seção "Conteúdo" -->
+                <li><a href="#">Depoimentos</a></li> <!-- Link para a seção "Depoimentos" -->
+                <li><a href="#">Exemplos</a></li> <!-- Link para a seção "Exemplos" -->
+                <li><a href="#">Tutorial</a></li> <!-- Link para a seção "Tutorial" -->
             </ul>
         </nav>
     </header>
-
-    <main>
-        <!-- Conteúdo principal da página -->
-
+    
+    <!-- ===========================
+         CONTEÚDO PRINCIPAL
+         =========================== -->
+    <main> 
+        <!-- Seção de destaque (hero) -->
         <section class="hero">
-            <!-- Seção "hero": área de destaque com título, texto e imagem -->
-            <!-- A classe "hero" pode ser usada para estilizar com fundo, altura etc -->
-
+            <!-- Texto de introdução -->
             <div class="hero-texto">
-                <!-- Bloco com o texto principal da hero -->
-
-                <h1>Construa interfaces. Aprenda na Prática.</h1>
-                <!-- Título de destaque -->
-
-                <p>
-                    Explore conceitos modernos de HTML, CSS e
-                    JavaScript com exemplos visuais e interativos.
-                </p>
-                <!-- Parágrafo explicativo da proposta -->
-
-                <a href="cadastro.html" class="btn-cta">Começar Agora</a>
-                <!-- Link estilizado como botão (Call To Action - CTA) -->
-                <!-- CORREÇÃO: o href estava com vírgula — deve ser .html -->
+                <h1>Construa interfaces. Aprenda na Prática.</h1> <!-- Título principal da seção hero -->
+                <p>Explore conceitos modernos de HTML, CSS e
+                   JavaScript com exemplos visuais e interativos.</p> <!-- Descrição resumida da proposta -->
+                <a href="cadastro.html" class="btn-cta">Começar Agora ></a> <!-- Botão que leva à página de cadastro -->
             </div>
 
+            <!-- Ilustração lateral -->
             <div class="hero-imagem">
-                <!-- Bloco para imagem da seção principal -->
+                <img src="images/hero-illustration.svg" alt="ilustração de programação"> <!-- Imagem ilustrativa com descrição alternativa -->
+            </div>
+        </section>
 
-                <img src="images/hero-illustration.svg" alt="ilustração de programação">
-                <!-- Imagem ilustrativa com descrição alternativa (alt) para acessibilidade -->
+        <!-- ===========================
+             SEÇÃO DE CONTEÚDO
+             =========================== -->
+        <section class="conteúdo">
+            <h2>O que você vai aprender</h2> <!-- Título da seção de aprendizado -->
+            
+            <!-- Container de cartões de conteúdo -->
+            <div class="cards">
+                <!-- Card 1: HTML -->
+                <div class="card">
+                    <h3>HTML</h3>
+                    <p>Estruturação de páginas com semântica e boas práticas.</p> <!-- Corrigido: "d páginas" para "de páginas" -->
+                </div>
+
+                <!-- Card 2: CSS -->
+                <div class="card">
+                    <h3>CSS</h3> <!-- Corrigido: antes estava escrito "HTML" de novo -->
+                    <p>Estilização moderna com cores, fontes e layout responsivo.</p>
+                </div>
+
+                <!-- Card 3: JavaScript -->
+                <div class="card">
+                    <h3>JavaScript</h3>
+                    <p>Interatividade e lógica com manipulação de eventos e DOM.</p>
+                </div>
             </div>
         </section>
     </main>
 
 </body>
-</html>
-
-
-
-
-
-
-
+</html> <!-- Fim do documento HTML -->

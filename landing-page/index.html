@@ -1,9 +1,12 @@
 <!DOCTYPE html> <!-- Declara que este documento está usando HTML5 -->
 
 <html lang="en"> <!-- Início do documento HTML, idioma definido como inglês -->
+
 <head>
-    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 (suporta caracteres especiais como acentos) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Garante que a página será responsiva em dispositivos móveis -->
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres para UTF-8 (suporta caracteres especiais como acentos) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Garante que a página será responsiva em dispositivos móveis -->
     <link rel="stylesheet" href="styles.css"> <!-- Importa o arquivo externo de estilos CSS -->
 </head>
 
@@ -16,7 +19,7 @@
         <!-- Barra de navegação principal -->
         <nav class="navbar">
             <div class="logo">Frontend Demo</div> <!-- Logo ou nome do site -->
-            
+
             <!-- Lista de links do menu de navegação -->
             <ul class="nav-links">
                 <li><a href="#">Início</a></li> <!-- Link para a seção "Início" -->
@@ -27,24 +30,25 @@
             </ul>
         </nav>
     </header>
-    
+
     <!-- ===========================
          CONTEÚDO PRINCIPAL
          =========================== -->
-    <main> 
+    <main>
         <!-- Seção de destaque (hero) -->
         <section class="hero">
             <!-- Texto de introdução -->
             <div class="hero-texto">
                 <h1>Construa interfaces. Aprenda na Prática.</h1> <!-- Título principal da seção hero -->
                 <p>Explore conceitos modernos de HTML, CSS e
-                   JavaScript com exemplos visuais e interativos.</p> <!-- Descrição resumida da proposta -->
+                    JavaScript com exemplos visuais e interativos.</p> <!-- Descrição resumida da proposta -->
                 <a href="cadastro.html" class="btn-cta">Começar Agora ></a> <!-- Botão que leva à página de cadastro -->
             </div>
 
             <!-- Ilustração lateral -->
             <div class="hero-imagem">
-                <img src="images/hero-illustration.svg" alt="ilustração de programação"> <!-- Imagem ilustrativa com descrição alternativa -->
+                <img src="images/hero-illustration.svg" alt="ilustração de programação">
+                <!-- Imagem ilustrativa com descrição alternativa -->
             </div>
         </section>
 
@@ -53,13 +57,14 @@
              =========================== -->
         <section class="conteúdo">
             <h2>O que você vai aprender</h2> <!-- Título da seção de aprendizado -->
-            
+
             <!-- Container de cartões de conteúdo -->
             <div class="cards">
                 <!-- Card 1: HTML -->
                 <div class="card">
                     <h3>HTML</h3>
-                    <p>Estruturação de páginas com semântica e boas práticas.</p> <!-- Corrigido: "d páginas" para "de páginas" -->
+                    <p>Estruturação de páginas com semântica e boas práticas.</p>
+                    <!-- Corrigido: "d páginas" para "de páginas" -->
                 </div>
 
                 <!-- Card 2: CSS -->
@@ -75,7 +80,36 @@
                 </div>
             </div>
         </section>
-    </main>
 
+        <section class="Pessoas">
+            <h2>O que dizem nossos alunos</h2> <!-- Título da seção de aprendizado -->
+
+            <!-- Container de cartões de conteúdo -->
+            <div class="alunos">
+                <!-- Card 1: HTML -->
+                <div class="Aluno">
+                    <img src="images/aluno1.jpg" alt="ilustração do aluno 1">
+                    <p>"Aprender frontend ficou muito mais fácil com esse projeto. Agora consigo criar minhas próprias
+                        páginas!"</p>
+                    <h3>João Pereira</h3>
+                </div>
+
+                <!-- Card 2: CSS -->
+                <div class="Aluno">
+                    <img src="images/aluno2.jpg" alt="ilustração do aluno 2">
+                    <p>"As explicações são diretas e os exemplos me ajudaram a entender o que eu achava impossível."</p>
+                    <h3>Maria Oliveira</h3>
+                </div>
+
+                <!-- Card 3: JavaScript -->
+                <div class="Aluno">
+                    <img src="images/aluno3.png" alt="ilustração do aluno 3">
+                    <p>"O projeto me deu confiança para montar meu portfólio e participar de processos seletivos."</p>
+                    <h3>Ana Costa</h3>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html> <!-- Fim do documento HTML -->

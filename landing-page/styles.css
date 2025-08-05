@@ -119,13 +119,13 @@
     color: #111827;             /* Cor escura para destaque */
     margin-bottom: 2rem;        /* Espaçamento inferior */
   }
-  
+     
   /* ============================
-     CARDS DE CONTEÚDO
+     CARDS DE CONTEÚDOl
      ============================ */
   .cards {
     display: flex;              /* Exibe os cards em linha */
-    flex-wrap: wrap;            /* Permite quebrar para múltiplas linhas */
+    flex-wrap: wrap;            /* Permite quebrar para múltiplas linhas */ 
     justify-content: center;    /* Centraliza os cards */
     gap: 2rem;                  /* Espaço entre os cards */
   }
@@ -153,6 +153,56 @@
   
   /* EFEITO HOVER DO CARD */
   .card:hover {
+    transform: translateY(-5px); /* Eleva o card levemente ao passar o mouse */
+  }
+  
+  .Pessoas {
+    padding: 4rem 2rem;         /* Espaçamento interno vertical e horizontal */
+    background-color:#f7f8fc;     /* Fundo branco */
+    text-align: center;         /* Centraliza o texto */
+  }
+  
+  /* TÍTULO DA SEÇÃO DE CONTEÚDO */
+  .Pessoas h2 {
+    font-size: 2rem;            /* Tamanho do título */
+    color: #111827;             /* Cor escura para destaque */
+    margin-bottom: 2rem;        /* Espaçamento inferior */
+  }
+
+  .alunos {
+    display: flex;              /* Exibe os cards em linha */
+    flex-wrap: wrap;            /* Permite quebrar para múltiplas linhas */
+    justify-content: center;    /* Centraliza os cards */
+    gap: 2rem;                  /* Espaço entre os cards */
+  }
+  
+  /* ESTILO INDIVIDUAL DE CADA CARD */
+  .Aluno {
+    background-color: #f9fafb;  /* Fundo cinza claro */
+    border-radius: 1rem;        /* Bordas arredondadas */
+    padding: 2rem;              /* Espaçamento interno */
+    max-width: 300px;           /* Largura máxima do card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor do card */
+    transition: transform 0.2s; /* Animação suave ao interagir */
+  }
+  
+.alunos img{
+  width: 50%;
+  border-radius: 50%;
+}
+  /* TÍTULO DO CARD */
+  .Aluno h3 {
+    color: #4f46e5;             /* Cor roxa para destacar */  
+    margin-bottom: 0.5rem;      /* Espaçamento inferior */
+  }
+  
+  /* PARÁGRAFO DO CARD */
+  .Aluno p {
+    color: #6b7280;             /* Cor cinza suave */
+  }
+  
+  /* EFEITO HOVER DO CARD */
+  .Aluno:hover {
     transform: translateY(-5px); /* Eleva o card levemente ao passar o mouse */
   }
   

@@ -104,6 +104,13 @@
     background-color: #e0e7ff;  /* Cor mais clara ao passar o mouse */
   }
   
+
+/*-----------------------------------------------------------------*/
+
+
+
+
+
   /* ============================
      SEÇÃO DE CONTEÚDO
      ============================ */
@@ -156,6 +163,10 @@
     transform: translateY(-5px); /* Eleva o card levemente ao passar o mouse */
   }
   
+
+/*------------------------------------------------------------------------------*/
+
+
   .Pessoas {
     padding: 4rem 2rem;         /* Espaçamento interno vertical e horizontal */
     background-color:#f7f8fc;     /* Fundo branco */
@@ -199,6 +210,7 @@
   /* PARÁGRAFO DO CARD */
   .Aluno p {
     color: #6b7280;             /* Cor cinza suave */
+    padding: 1rem;
   }
   
   /* EFEITO HOVER DO CARD */
@@ -206,62 +218,68 @@
     transform: translateY(-5px); /* Eleva o card levemente ao passar o mouse */
   }
   
-
-
-
-
-
-
-
-
+/*-------------------------------------------------------------*/
 
 
   .veja {
     padding: 4rem 2rem;         /* Espaçamento interno vertical e horizontal */
-    background-color:#f7f8fc;     /* Fundo branco */
+    background-color:#ffffff;     /* Fundo branco */
     text-align: center;         /* Centraliza o texto */
   }
   
   /* TÍTULO DA SEÇÃO DE CONTEÚDO */
   .veja h2 {
     font-size: 2rem;            /* Tamanho do título */
+    padding: 1rem;
     color: #111827;             /* Cor escura para destaque */
-    margin-bottom: 2rem;        /* Espaçamento inferior */
+  }
+
+  .veja p{
+    padding: 3rem;
+    font-size: 25px;
+  
   }
 
   .exemplos {
     display: flex;              /* Exibe os cards em linha */
     flex-wrap: wrap;            /* Permite quebrar para múltiplas linhas */
-    justify-content: center;    /* Centraliza os cards */
-    gap: 2rem;                  /* Espaço entre os cards */
+   justify-content: center;   /* Centraliza os cards */
+    gap: 3rem;                  /* Espaço entre os cards */
   }
   
   /* ESTILO INDIVIDUAL DE CADA CARD */
   .exemplo {
     background-color: #f9fafb;  /* Fundo cinza claro */
     border-radius: 1rem;        /* Bordas arredondadas */
-    padding: 2rem;              /* Espaçamento interno */
     max-width: 300px;           /* Largura máxima do card */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor do card */
     transition: transform 0.2s; /* Animação suave ao interagir */
   }
   
 .exemplos img{
-  width: 60%;
-  border-radius: 40%;
+  width: 100%;
+  height: 200px;
+  border-radius: 16px 16px 0 0;
+  
 }
   /* TÍTULO DO CARD */
   .exemplo h3 {
     color: #4f46e5;             /* Cor roxa para destacar */  
-    margin-bottom: 0.5rem;      /* Espaçamento inferior */
+    padding: 0.5rem;
   }
   
   /* PARÁGRAFO DO CARD */
   .exemplo p {
-    color: #6b7280;             /* Cor cinza suave */
+    color: #6b7280; 
+    font-size: 20px;
+    padding: 1rem;        
   }
   
   /* EFEITO HOVER DO CARD */
   .exemplo:hover {
     transform: translateY(-5px); /* Eleva o card levemente ao passar o mouse */
   }
+
+
+  
+  
